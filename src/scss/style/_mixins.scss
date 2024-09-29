@@ -1,0 +1,37 @@
+@mixin button-style($bg-color, $text) {
+    background-color: $bg-color;
+    border: none;
+    color: $text;
+    cursor: pointer;
+}
+
+@mixin montserrat($font-weight, $size, $text-color){
+    font-weight: $font-weight;
+    font-family: "Montserrat", system-ui;
+    font-size: $size;
+    color: $text-color;
+}
+@mixin nunito($font-weight, $size, $text-color){
+    font-weight: $font-weight;
+    font-family: "Nunito", system-ui;
+    font-size: $size;
+    color: $text-color;
+}
+@mixin poppins{
+    font-weight: 500;
+    font-family: "Poppins", system-ui;
+    font-size: 24px;
+    color: $color-primary;
+}
+@mixin raleway{
+    font-weight: 500;
+    font-family: "Raleway", system-ui;
+    font-size: 8px;
+    color: #fff;
+}
+@mixin worksans($font-weight, $size, $text-color){
+    font-weight: $font-weight;
+    font-family: "Work Sans", system-ui;
+    font-size: $size;
+    color: $text-color;
+}

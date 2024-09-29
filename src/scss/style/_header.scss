@@ -1,0 +1,123 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    z-index: 10;
+    .logo{
+        @include nunito(900, 12, #fff);
+        text-transform: uppercase;
+        background-color: $color-primary;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        padding: 8px 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper-icon{
+        display: flex;
+        gap: 40px;
+        margin-left: auto;
+    }
+    .wrapper-auth{
+        display: flex;
+        padding-left: 8px;
+        &__btn{
+            @include nunito(700, $color-primary, 14px);
+            line-height: 20px;
+        }
+        .sign-up{
+            @include button-style(#fff, $color-primary);
+            padding: 8px 30px;
+            &:hover{
+                @include button-style($color-primary, #fff);
+                opacity: 0.7;
+                transition: all 0.3s ease;
+            }
+        }
+        .sign-in{
+            @include button-style($color-primary, #fff);
+            padding: 8px 30px;
+            &:hover{
+                opacity: 0.7;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    .search-box{
+        font-size: 14px;
+        border: solid 3px $color-primary;
+        display: inline-block;
+        position: relative;
+        border-radius: 40px;
+        input[type="text"] {
+            @include nunito(700, $color-primary, 14px);
+            width: 20px;
+            height: 20px;
+            padding: 5px 15px 5px 6px;
+            border: none;
+            box-sizing: border-box;
+            border-radius: 40px;
+            transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 150ms;
+            &:focus {
+                outline: none;
+            }
+            &:focus, &:not(:placeholder-shown) {
+                width: 250px;
+                transition: width 800ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+                + button[type="reset"] {
+                    transform: rotate(-45deg) translateY(20px);
+                    transition:
+                    transform 150ms ease-out 800ms;
+                }
+                + button[type="reset"]:after {
+                    opacity: 1;
+                    transition:
+                        top 150ms ease-out (800ms + 150ms),
+                        right 150ms ease-out (800ms + 150ms),
+                        opacity 150ms ease (800ms + 150ms);
+                }
+            }
+            @media (max-width: 768px) {
+                &:focus,
+                &:not(:placeholder-shown) {
+                  width: 150px;
+                }
+              }
+        }
+        button[type="reset"] {
+            background-color: transparent;
+            width: 22px;
+            height: 22px;
+            border: 0;
+            padding: 0;
+            outline: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: calc(-22px / 2) - calc(8px / 2);
+            right: calc(57px / 2) - calc(35px / 2);
+            transform: rotate(-45deg) translateY(40px - 5px);
+            transition:
+                transform 150ms ease-out 150ms;
+            &:before, &:after {
+                content: "";
+                background-color: $color-primary;
+                width: 3px;
+                height: 9px;
+                position: absolute;
+            }
+            &:after {
+                transform: rotate(90deg);
+                opacity: 0;
+                transition:
+                    transform 150ms ease-out,
+                    opacity 150ms ease-out;
+            }
+        }
+    }
+}
