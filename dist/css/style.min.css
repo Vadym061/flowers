@@ -574,10 +574,6 @@ a {
   text-align: start;
   padding: 40px 50px;
 }
-.section-hero__btn:hover svg {
-  transform: translateX(-15%);
-  transition: all 0.3s ease;
-}
 .section-hero__btn-span {
   font-weight: 500;
   font-family: "Montserrat", system-ui;
@@ -592,6 +588,10 @@ a {
   color: #156963;
   cursor: pointer;
 }
+.section-hero .prev:hover svg {
+  transform: translateX(-15%);
+  transition: all 0.3s ease;
+}
 .section-hero .next {
   background-color: #156963;
   border: none;
@@ -604,6 +604,10 @@ a {
 }
 .section-hero .next .section-hero__btn-span svg {
   transform: rotate(180deg);
+}
+.section-hero .next:hover svg {
+  transform: rotate(180deg) translateX(-15%);
+  transition: all 0.3s ease;
 }
 .section-hero .slider {
   overflow: hidden;

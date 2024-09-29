@@ -28,12 +28,7 @@
         flex-direction: column;
         text-align: start;
         padding: 40px 50px;
-        &:hover{
-            svg{
-                transform: translateX(-15%);
-                transition: all 0.3s ease;
-            }
-        }
+       
     }
     &__btn-span{
         @include montserrat(500, 24px, $color-primary);
@@ -42,6 +37,12 @@
     }
     .prev{
         @include button-style(#fff, $color-primary);
+        &:hover{
+            svg{
+                transform: translateX(-15%);
+                transition: all 0.3s ease;
+            }
+        }
     }
     .next{
         @include button-style($color-primary, #fff );
@@ -50,6 +51,12 @@
             opacity: 0.5;
             svg{
                 transform: rotate(180deg);
+            }
+        }
+        &:hover{
+            svg{
+                transform: rotate(180deg) translateX(-15%);
+                transition: all 0.3s ease;
             }
         }
     }
