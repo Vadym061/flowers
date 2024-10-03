@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Главная</title>
+    <title>Flower plant</title>
 </head>
 <body class="page">
     <header class="header container">
@@ -40,7 +42,7 @@
     </div>
 </header>
     <main>
-    <section class="section-hero">
+    <section class="section-hero section">
     <div class="slider">
         <div class="slides">
             <img src="img/pexels-cottonbro.png" class="slide-img" width="608" height="740" alt="Hero baner flowers">
@@ -77,6 +79,140 @@
         </div>
     </div>
     
+</section>
+    <section class="services section" >
+    <div class="container">
+        <ul class="services__wrapper">
+            <li class="services__item">
+                <div class="services__container">
+                    <img src="img/fast.svg" alt="Delivery svg">
+                    <h3 class="services__title">Fast  Delivery</h3>
+                </div>
+                <p class="services__description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                </p>
+            </li>
+            <li class="services__item">
+                <div class="services__container">
+                    <img src="img/Group.svg" alt="Group svg">
+                    <h3 class="services__title">Great Customer Service</h3>
+                </div>
+                <p class="services__description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                </p>
+            </li>
+            <li class="services__item">
+                <div class="services__container">
+                    <img src="img/plant.svg" alt="Plant svg">
+                    <h3 class="services__title">Original  Plants</h3>
+                </div>
+                <p class="services__description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                </p>
+            </li>
+            <li class="services__item">
+                <div class="services__container">
+                    <img src="img/dollar-symbol.svg" alt="dollar-symbol svg">
+                    <h3 class="services__title">Affordable  Price</h3>
+                </div>
+                <p class="services__description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+    <section class="featured section">
+    <div class="container">
+        <div class="featured__header">
+            <h2 class="featured__title">
+                Featured Plants
+            </h2>
+            <select name="sort" class="featured__select" id="sort-options">
+                <option value="cheaper-first">Cheaper First</option>
+                <option value="expensive-first">Expensive First</option>
+                <option value="newest-first">Newest First</option>
+                <option value="oldest-first">Oldest First</option>
+            </select>
+        </div>
+
+        <ul class="featured__list">
+            <li class="featured__item" data-date="2023-09-10">
+                <article class="featured__card">
+                    <figure class="featured__image">
+                        <img src="img/annie-spratt-1.png" width="217" height="217" alt="Kaktus Plants" />
+                    </figure>
+                    <h4 class="featured__card--title">Kaktus Plants</h4>
+                    <p class="featured__card--price">$7.25</p>
+
+                    <div class="featured__hover-box">
+                        <button class="add-to-cart-btn">Add to cart</button>
+                    </div>
+                </article>
+            </li>
+            <li class="featured__item" data-date="2023-12-20">
+                <article class="featured__card">
+                    <figure class="featured__image">
+                        <img src="img/stephanie-harvey-3.png" width="217" height="217" alt="Kaktus Plants" />
+                    </figure>
+                    <h4 class="featured__card--title">Kaktus Plants</h4>
+                    <p class="featured__card--price">$10.78</p>
+
+                    <div class="featured__hover-box">
+                        <button class="add-to-cart-btn">Add to cart</button>
+                    </div>
+                </article>
+            </li>
+            <li class="featured__item" data-date="2024-02-09">
+                <article class="featured__card">
+                    <figure class="featured__image">
+                        <img src="img/stephanie-harvey-2.png" width="217" height="217" alt="Kaktus Plants" />
+                    </figure>
+                    <h4 class="featured__card--title">Kaktus Plants</h4>
+                    <p class="featured__card--price">$9.99</p>
+
+                    <div class="featured__hover-box">
+                        <button class="add-to-cart-btn">Add to cart</button>
+                    </div>
+                </article>
+            </li>
+            <li class="featured__item" data-date="2024-03-11">
+                <article class="featured__card">
+                    <figure class="featured__image">
+                        <img src="img/galina-n-1.png" width="217" height="217" alt="Kaktus Plants" />
+                    </figure>
+                    <h4 class="featured__card--title">Kaktus Plants</h4>
+                    <p class="featured__card--price">$13.75</p>
+
+                    <div class="featured__hover-box">
+                        <button class="add-to-cart-btn">Add to cart</button>
+                    </div>
+                </article>
+            </li>
+            <li class="featured__item" data-date="2024-03-30">
+                <article class="featured__card">
+                    <figure class="featured__image">
+                        <img src="img/stephanie-harvey-1.png" width="217" height="217" alt="Kaktus Plants" />
+                    </figure>
+                    <h4 class="featured__card--title">Kaktus Plants</h4>
+                    <p class="featured__card--price">$11.05</p>
+
+                    <div class="featured__hover-box">
+                        <button class="add-to-cart-btn">Add to cart</button>
+                    </div>
+                </article>
+            </li>
+        </ul>
+
+        <button id="more-button" class="more-button">More</button>
+        <div id="loader" class="preloader">
+            <div class="circ1"></div>
+            <div class="circ2"></div>
+            <div class="circ3"></div>
+            <div class="circ4"></div>
+        </div>
+    </div>
+        
 </section>
 </main>
     <footer>Bay</footer>

@@ -13,7 +13,24 @@
     margin: 0 auto;
     padding: 0 15px;
 }
+.section{
+    padding-bottom: 80px;
+    @media screen and (max-width: 920px) {
+        padding-bottom: 40px;
+    }
+    @media screen and (max-width: 920px) {
+        padding-bottom: 20px;
+    }
+}
 a{
     text-decoration: none;
     color: inherit;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+figure{
+    margin: 0;
 }
