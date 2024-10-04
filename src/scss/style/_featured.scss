@@ -23,6 +23,9 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        @media (max-width: 768px){
+          gap: 10px;
+        }
     }
     &__item{
         cursor: pointer;

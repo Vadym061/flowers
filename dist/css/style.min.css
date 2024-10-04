@@ -723,6 +723,7 @@ figure {
   color: #2C1500;
   margin: 16px 0 0 0;
   line-height: 16px;
+  padding: 0 10px;
 }
 
 .featured__header {
@@ -755,6 +756,11 @@ figure {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .featured__list {
+    gap: 10px;
+  }
 }
 .featured__item {
   cursor: pointer;
@@ -915,5 +921,147 @@ figure {
   60% {
     border-radius: 50%;
     -webkit-border-radius: 50%;
+  }
+}
+.plants__wrapper {
+  display: flex;
+  gap: 80px;
+}
+@media screen and (max-width: 920px) {
+  .plants__wrapper {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .plants__wrapper {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+.plants__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.plants__box-text {
+  padding: 0 20px;
+}
+@media screen and (max-width: 768px) {
+  .plants__box-text {
+    text-align: center;
+    padding: 0;
+  }
+}
+.plants__title {
+  font-weight: 700;
+  font-family: "Montserrat", system-ui;
+  font-size: 40px;
+  color: #2C1500;
+  line-height: 56px;
+  margin: 0;
+}
+@media screen and (max-width: 640px) {
+  .plants__title {
+    font-weight: 700;
+    font-family: "Montserrat", system-ui;
+    font-size: 24px;
+    color: #2C1500;
+    line-height: 34px;
+  }
+}
+.plants__description {
+  font-weight: 400;
+  font-family: "Montserrat", system-ui;
+  font-size: 16px;
+  color: #2C1500;
+  line-height: 28px;
+  margin: 0;
+  padding: 16px 0;
+}
+@media screen and (max-width: 640px) {
+  .plants__description {
+    font-weight: 400;
+    font-family: "Montserrat", system-ui;
+    font-size: 14px;
+    color: #2C1500;
+  }
+}
+.plants__image-box {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.plants__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.favourites-plants__wrapper {
+  background-color: #F3F4F6;
+  display: flex;
+  align-items: center;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .favourites-plants__wrapper {
+    flex-direction: column;
+  }
+}
+.favourites-plants__content {
+  padding-left: 100px;
+}
+@media screen and (max-width: 920px) {
+  .favourites-plants__content {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .favourites-plants__content {
+    padding-left: 0;
+    text-align: center;
+    padding: 15px 10px;
+  }
+}
+.favourites-plants__title {
+  font-weight: 700;
+  font-family: "Montserrat", system-ui;
+  font-size: 40px;
+  color: #2C1500;
+  line-height: 56px;
+  margin: 0;
+  padding: 0 0 40px 0;
+}
+@media screen and (max-width: 768px) {
+  .favourites-plants__title {
+    font-weight: 700;
+    font-family: "Montserrat", system-ui;
+    font-size: 24px;
+    color: #2C1500;
+    line-height: 34px;
+  }
+}
+.favourites-plants__btn {
+  font-weight: 700;
+  font-family: "Nunito", system-ui;
+  font-size: #156963;
+  color: 14px;
+  line-height: 20px;
+  background-color: #156963;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 30px;
+}
+.favourites-plants__btn:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 920px) {
+  .favourites-plants__image img {
+    width: 100%;
+    height: auto;
   }
 }

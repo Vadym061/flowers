@@ -1,0 +1,53 @@
+.favourites-plants{
+    &__wrapper{
+        background-color: #F3F4F6;
+        display: flex;
+        align-items: center;
+        max-width: 1160px;
+        margin: 0 auto;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+    &__content{
+        padding-left: 100px;
+        @media screen and (max-width: 920px) {
+            padding-left: 50px;
+        }
+        @media screen and (max-width: 768px) {
+            padding-left: 0;
+            text-align: center;
+            padding: 15px 10px;
+        }
+        
+    }
+    &__title{
+        @include montserrat(700, 40px, #2C1500);
+        line-height: 56px;
+        margin: 0;
+        padding: 0 0 40px 0;
+        @media screen and (max-width: 768px) {
+            @include montserrat(700, 24px, #2C1500);
+            line-height: 34px;
+        }
+    }
+    &__btn{
+        @include nunito(700, $color-primary, 14px);
+        line-height: 20px;
+       
+        @include button-style($color-primary, #fff);
+            padding: 8px 30px;
+            &:hover{
+                opacity: 0.7;
+                transition: all 0.3s ease;
+            }  
+    }
+    &__image img {
+        @media screen and (max-width: 920px) {
+            width: 100%; 
+            height: auto; 
+        }
+        
+       
+    }
+}

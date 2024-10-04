@@ -5,6 +5,8 @@ export function scriptsSectionFeatured(){
     const additionalProductsList = document.querySelector('.featured__list');
     const selected = document.getElementById('sort-options');
 
+    let loadCount = 0;
+
     selected.addEventListener('change', function () {
         const sortOption = this.value;
         
@@ -49,7 +51,6 @@ export function scriptsSectionFeatured(){
         setTimeout(() => {
             loader.style.display = 'none';
     
-            // Insert new <li> items into the existing <ul>
             additionalProductsList.insertAdjacentHTML("beforeend", `
                 <li class="featured__item" data-date="2024-04-15">
                     <article class="featured__card">
@@ -113,8 +114,6 @@ export function scriptsSectionFeatured(){
                 </li>
             `);
     
-           
-            // loadMoreBtn.textContent = 'Show Less'; 
     
             loadMoreBtn.style.display = 'block';
         }, 3500);
