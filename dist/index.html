@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/src/img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/src/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20241015095243">
     <title>Flower plant</title>
 </head>
 <body class="page">
-    <header class="header container">
+    <header id="header" class="header container">
     <div class="container-logo">
         <a href="#" class="logo">p</a>
     </div>
@@ -34,6 +34,7 @@
                 </clipPath>
                 </defs>
             </svg>
+            <span class="wrapper-icon__cart--count">0</span>
         </a>
     </div>
     <div class="wrapper-auth">
@@ -45,8 +46,8 @@
     <section class="section-hero section">
     <div class="slider">
         <div class="slides">
-            <img src="img/pexels-cottonbro.png" class="slide-img" width="608" height="740" alt="Hero baner flowers">
-            <img src="img/kactus-plant.jpg" class="slide-img" width="608" height="740" alt="Hero baner kactus-plant">
+            <picture><source srcset="img/pexels-cottonbro.webp" type="image/webp"><img src="img/pexels-cottonbro.png" class="slide-img" width="608" height="740" alt="Hero baner flowers"></picture>
+            <picture><source srcset="img/kactus-plant.webp" type="image/webp"><img src="img/kactus-plant.jpg" class="slide-img" width="608" height="740" alt="Hero baner kactus-plant"></picture>
         </div>
     </div>
     <div class="section-hero__text">
@@ -140,7 +141,7 @@
             <li class="featured__item" data-date="2023-09-10">
                 <article class="featured__card">
                     <figure class="featured__image">
-                        <img src="img/annie-spratt-1.png" width="217" height="217" alt="Kaktus Plants" />
+                        <picture><source srcset="img/annie-spratt-1.webp" type="image/webp"><img src="img/annie-spratt-1.png" width="217" height="217" alt="Kaktus Plants" /></picture>
                     </figure>
                     <h4 class="featured__card--title">Kaktus Plants</h4>
                     <p class="featured__card--price">$7.25</p>
@@ -153,7 +154,7 @@
             <li class="featured__item" data-date="2023-12-20">
                 <article class="featured__card">
                     <figure class="featured__image">
-                        <img src="img/stephanie-harvey-3.png" width="217" height="217" alt="Kaktus Plants" />
+                        <picture><source srcset="img/stephanie-harvey-3.webp" type="image/webp"><img src="img/stephanie-harvey-3.png" width="217" height="217" alt="Kaktus Plants" /></picture>
                     </figure>
                     <h4 class="featured__card--title">Kaktus Plants</h4>
                     <p class="featured__card--price">$10.78</p>
@@ -166,7 +167,7 @@
             <li class="featured__item" data-date="2024-02-09">
                 <article class="featured__card">
                     <figure class="featured__image">
-                        <img src="img/stephanie-harvey-2.png" width="217" height="217" alt="Kaktus Plants" />
+                        <picture><source srcset="img/stephanie-harvey-2.webp" type="image/webp"><img src="img/stephanie-harvey-2.png" width="217" height="217" alt="Kaktus Plants" /></picture>
                     </figure>
                     <h4 class="featured__card--title">Kaktus Plants</h4>
                     <p class="featured__card--price">$9.99</p>
@@ -179,7 +180,7 @@
             <li class="featured__item" data-date="2024-03-11">
                 <article class="featured__card">
                     <figure class="featured__image">
-                        <img src="img/galina-n-1.png" width="217" height="217" alt="Kaktus Plants" />
+                        <picture><source srcset="img/galina-n-1.webp" type="image/webp"><img src="img/galina-n-1.png" width="217" height="217" alt="Kaktus Plants" /></picture>
                     </figure>
                     <h4 class="featured__card--title">Kaktus Plants</h4>
                     <p class="featured__card--price">$13.75</p>
@@ -192,7 +193,7 @@
             <li class="featured__item" data-date="2024-03-30">
                 <article class="featured__card">
                     <figure class="featured__image">
-                        <img src="img/stephanie-harvey-1.png" width="217" height="217" alt="Kaktus Plants" />
+                        <picture><source srcset="img/stephanie-harvey-1.webp" type="image/webp"><img src="img/stephanie-harvey-1.png" width="217" height="217" alt="Kaktus Plants" /></picture>
                     </figure>
                     <h4 class="featured__card--title">Kaktus Plants</h4>
                     <p class="featured__card--price">$11.05</p>
@@ -222,11 +223,11 @@
                 <p class="plants__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida gravida aliquam. Pellentesque et lobortis nisl. Sed et mauris justo. Nulla eu enim non mauris maximus dignissim. Maecenas vitae eros sapien. Quisque pellentesque tempus dignissim.</p>
             </div>
             <figure class="plants__image-box">
-                <img src="img/liana-mikah-8.png" class="plants__image" width="570" height="250" alt="Liana Mikah">
+                <picture><source srcset="img/liana-mikah-8.webp" type="image/webp"><img src="img/liana-mikah-8.png" class="plants__image" width="570" height="250" alt="Liana Mikah"></picture>
             </figure>
         </div>
         <figure class="plants__image-box">
-            <img src="img/plants.png" class="plants__image" width="515" height="610" alt="Plant">
+            <picture><source srcset="img/plants.webp" type="image/webp"><img src="img/plants.png" class="plants__image" width="515" height="610" alt="Plant"></picture>
         </figure>
     </div>
 </section>
@@ -237,12 +238,52 @@
             <a href="#" class="favourites-plants__btn">Visit Shop</a>
        </div>
        <figure class="favourites-plants__image">
-        <img src="img/sanni-sahil.png" width="480" height="360" alt="Sanni sahil">
+        <picture><source srcset="img/sanni-sahil.webp" type="image/webp"><img src="img/sanni-sahil.png" width="480" height="360" alt="Sanni sahil"></picture>
        </figure>
     </div>
 </section>
 </main>
-    <footer>Bay</footer>
-    <script src="js/app.min.js"></script>
+    <footer class="footer">
+    <div class="footer__content container">
+        <div class="footer__wrapper">
+            <div class="footer__logo-wrapper">
+                <a href="#" class="footer__logo">plantku</a>
+            </div>
+
+            <h2 class="footer__title">Plantku House</h2>
+            <p class="footer__address">Jl. Laksda Adisucipto No.51, Demangan, Kec. Depok, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55282</p>
+        </div>
+        <div class="footer__wrapper">
+            <h2 class="footer__title">Perusahaan</h2>
+            <ul class="footer__list">
+                <li>
+                    <a href="#">Tentang Kami</a>
+                </li>
+                <li>
+                    <a href="#">Hubungi Kami</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__wrapper">
+            <h2 class="footer__title">Produk</h2>
+            <ul class="footer__list">
+                <li>
+                    <a href="#">Tanaman</a>
+                </li>
+                <li>
+                    <a href="#">Tanaman Lain</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__wrapper">
+            <h2 class="footer__title">Berlangganan Email Kami</h2>
+            <form action="" class="footer__form">
+                <input class="footer__input" type="email" placeholder="Masukan Alamat Email">
+                <button class="footer__btn-submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</footer>
+    <script src="js/app.min.js?_v=20241015095243"></script>
 </body>
 </html>

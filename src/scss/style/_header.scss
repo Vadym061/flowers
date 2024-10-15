@@ -7,6 +7,11 @@
     align-items: center;
     margin-top: 40px;
     z-index: 10;
+    transition: transform 0.3s ease;
+    @media (max-width: 768px){
+        margin-top: 10px;
+    }
+    
     .logo{
         @include nunito(900, 12, #fff);
         text-transform: uppercase;
@@ -21,10 +26,28 @@
         display: flex;
         gap: 40px;
         margin-left: auto;
+        @media (max-width: 768px){
+            gap: 10px;
+        }
+        &__cart{
+            position: relative;
+            &--count{
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                background-color: #fff;
+                padding: 0 4px;
+                border-radius: 10px;
+                @include montserrat(400, $color-primary, 12px);
+            }
+        }
     }
     .wrapper-auth{
         display: flex;
         padding-left: 8px;
+        @media (max-width: 768px){
+            display: none;
+        }
         &__btn{
             @include nunito(700, $color-primary, 14px);
             line-height: 20px;
@@ -120,4 +143,8 @@
             }
         }
     }
+}
+
+.hidden {
+    transform: translateY(-220%); /* Hide the header */
 }

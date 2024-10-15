@@ -121,13 +121,20 @@ export function scriptsSectionFeatured(){
 
     addToCart.forEach(button => {
         button.addEventListener('click', function () {
+            const cartCount = document.querySelector('.wrapper-icon__cart--count');
+            let currentCount = parseInt(cartCount.textContent);
+    
             if (!this.classList.contains('added')) {
                 this.classList.add('added');
                 this.textContent = 'Remove from cart';
+                currentCount++; 
             } else {
                 this.classList.remove('added');
-                this.textContent = 'Add to card';
+                this.textContent = 'Add to cart';
+                currentCount--; 
             }
+    
+            cartCount.textContent = currentCount;
         });
     });
 }

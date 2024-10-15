@@ -1,0 +1,68 @@
+.footer{
+    border-top: 1px solid $color-primary;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 10px;
+        max-width: 980px;
+        @media screen and (max-width: 768px){
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+    }
+    &__wrapper{
+        &:first-child{
+            max-width: 280px;
+        }
+    }
+    &__logo-wrapper{
+        padding-bottom: 24px;
+    }
+    &__logo{
+        @include poppins;
+        text-transform: uppercase;
+    }
+    &__title{
+        @include worksans(600, 18px, #333333);
+        margin: 0;
+        line-height: 16px
+    }
+    &__address{
+        @include worksans(400, 13px, #4F4F4F);
+        line-height: 20px;
+        margin: 0;
+        padding-top: 10px;
+    }
+    &__list{
+        @include worksans(400, 14px, #000);
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__input{
+        margin: 14px 0;
+        border: 1px solid #F2F2F2;
+        padding: 8px 0 8px 13px;
+        width: 100%;
+    }
+    &__btn-submit{
+        @include raleway;
+        max-width: 50px;
+        padding: 5px 0;
+        background-color: $color-primary;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+}
