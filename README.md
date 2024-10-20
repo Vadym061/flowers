@@ -7,18 +7,14 @@ An online flower shop with a wide range and easy ordering - Kembang Flower Manta
 
 ---
 
-✅ **Feature 1**  
-✅ **Feature 2**  
-✅ **Feature 3**
+✅ **adding a product to the cart**  
+✅ **product filter**  
+✅ **show more product**
 
 ---
 
 🚀 Structure & Technical Details
 The project is built using HTML / SCSS / JavaScript. To set it up and run, follow these steps:
-
-Step 1
-Step 2
-Step 3
 
 📦 Installation
 
@@ -33,14 +29,16 @@ gulp
 🛠️ Tools & Technologies
 This project utilizes the following technologies:
 
-[Programming Language]
-[Framework or Library]
-[Database]
+Html / Scss / JavaScript / Gulp
 
 ---
 
 🖥️ Screenshots
 
+./src/img/kaktus-plants.png
+
+---
+Demo: https://kaktus-plants.netlify.app/
 ---
 
 📞 Contact
